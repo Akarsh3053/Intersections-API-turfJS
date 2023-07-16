@@ -11,7 +11,7 @@ The Intersections API is a Node.js application that provides an API endpoint for
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/Akarsh3053/intersections-API-turfJS
    ```
 2. Install the dependencies:
    ```bash
