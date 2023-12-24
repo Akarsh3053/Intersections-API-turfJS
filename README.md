@@ -1,6 +1,6 @@
 # Intersections API
 
-The Intersections API is a Node.js application that provides an API endpoint for finding intersecting lines between a given linestring and a set of randomly spread lines. The API is built using Express.js and integrates with the Turf.js library for spatial calculations.
+The Intersections API is a Node.js application that provides an API endpoint for finding intersecting lines between a given line string and a set of randomly spread lines. The API uses Express.js and integrates with the Turf.js library for spatial calculations.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ The Intersections API is a Node.js application that provides an API endpoint for
   The API server will start running on http://localhost:3000.
 
 ## API Endpoint: http://localhost:3000/api/intersections
-This endpoint accepts a GeoJSON linestring in the request body and finds intersecting lines from the set of randomly spread lines.
+This endpoint accepts a GeoJSON line string in the request body and finds intersecting lines from the set of randomly spread lines.
 
 Request Body:
   ```bash
@@ -45,7 +45,7 @@ Request Body:
 Response:
 
 If there are no intersections, the API returns an empty array [].
-If there are intersections, the API returns an array of objects containing the intersecting line IDs and the intersection points.
+If intersections exist, the API returns an array of objects containing the intersecting line IDs and the intersection points.
 
 Authentication
 The API endpoint is protected with header-based authentication. Include the Authorization header with the value of the configured authentication token.
@@ -60,7 +60,7 @@ To test the API using Postman:
 - Create a new POST request.
 - Set the request URL to http://localhost:3000/api/intersections.
 - Add the Authorization header with the value as password.
-- In the request body, provide a GeoJSON linestring in the following format:
+- In the request body, provide a GeoJSON line string in the following format:
 ```bash
 {
   "type": "LineString",
@@ -72,3 +72,5 @@ To test the API using Postman:
 }
 ```
 - Send the request and check the response for the intersecting lines.
+
+## 
